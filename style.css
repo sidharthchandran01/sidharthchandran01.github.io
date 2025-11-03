@@ -2,17 +2,17 @@
 
 body {
 
-&nbsp; font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif;
 
-&nbsp; margin: 0;
+margin: 0;
 
-&nbsp; padding: 0;
+padding: 0;
 
-&nbsp; background: #f5f6fa;
+background: pink;
 
-&nbsp; color: #2f3640;
+color: blue;
 
-&nbsp; line-height: 1.6;
+line-height: 1.6;
 
 }
 
@@ -155,6 +155,7 @@ footer {
 &nbsp; margin-top: 40px;
 
 }
+
 
 
 
