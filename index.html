@@ -1,42 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidharth Chandran | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sidharth Chandran | Portfolio</title>
-<body>
-  <header>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-    <h1>Sidharth Chandran</h1>
-    <p>Data Analyst | Business Intelligence Analyst | Operations Analyst</p>
-  </header>
+<body>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hello! I'm a data-driven professional with 7+ years of experience in data analysis, business intelligence and automation across finance, telecom, media and technology, specialized in building scalable end-to-end data solutions that convert raw data into actionable insights and measurable business outcomes with expertise in SQL, Python and cloud platforms including AWS, GCP and Azure, proficient in visualization tools such as PowerBI, Tableau, Google Analytics, Adobe Analytics and QlikSense to drive informed decision-making and adept at translating complex business requirements into analytical frameworks and interactive dashboard and committed to leveraging data-driven strategies to enhance business performance, innovation and growth</p>
-  </section>
+  <!-- Navbar -->
+  <header id="header">
+    <div class="container nav-container">
+      <h1 class="logo">Sidharth Chandran</h1>
+      <nav>
+        <ul id="navbar">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </header>
 
-  <section>
-    <h2>Projects</h2>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi! I'm Sidharth, a passionate web developer and data enthusiast. I love building modern web apps and learning new technologies.</p>
+    </div>
+  </section>
 
-    <div class="project">
-      <h3>Project One</h3>
-      <p>A short description of your project.</p>
-      <a href="https://github.com/yourusername/project-one">View on GitHub</a>
-    </div>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        <li>Python</li>
+        <li>Machine Learning</li>
+      </ul>
+    </div>
+  </section>
 
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>Another project description.</p>
-      <a href="https://github.com/yourusername/project-two">View on GitHub</a>
-    </div>
-  </section>
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Data Science Intern | SCAN</h3>
+        <span>June 2024 - Present</span>
+        <p>Developed automated pipelines and a Flask app to organize large medical documents.</p>
+      </div>
+      <div class="job">
+        <h3>Software Engineer | Jio</h3>
+        <span>July 2022 - Aug 2023</span>
+        <p>Built interactive dashboards, optimized data loading, and managed Oracle databases.</p>
+      </div>
+    </div>
+  </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p><a href="https://www.linkedin.com/in/yourprofile/">LinkedIn</a></p>
-  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>GenAI Chatbot</h3>
+        <p>Built a RAG-based chatbot using LLaMa3.1 and deployed with Streamlit.</p>
+        <a href="#">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>User Behavior Analyzer</h3>
+        <p>Analyzed real-time user patterns and trends for Spotify data.</p>
+        <a href="#">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Alice K. Stowe Scholarship, University of Washington</li>
+        <li>Winner - Bug Squash Hackathon</li>
+        <li>Second place - Smart India Hackathon</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:sidharth@example.com">sidharth@example.com</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/sidharth</a></p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sidharth Chandran | Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
