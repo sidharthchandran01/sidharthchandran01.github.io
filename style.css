@@ -1,155 +1,110 @@
-/\* General styles \*/
-
+/* General */
 body {
-font-family: 'Poppins', sans-serif;
-margin: 0;
-padding: 0;
-background: pink;
-color: red;
-line-height: 1.6;
-
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
+a { text-decoration: none; color: #4a90e2; }
+a:hover { text-decoration: underline; }
 
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
 
-/\* Header \*/
-
+/* Navbar */
 header {
-
-&nbsp; background: linear-gradient(135deg, #4a90e2, #357ABD);
-
-&nbsp; color: red;
-
-&nbsp; text-align: center;
-
-&nbsp; padding: 60px 20px;
-
+  background: #4a90e2;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
-
-
-header h1 {
-
-&nbsp; margin-bottom: 10px;
-
-&nbsp; font-size: 2.5rem;
-
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
 }
 
+header .logo { font-size: 1.8rem; font-weight: 600; }
 
-
-/\* Sections \*/
-
-section {
-
-&nbsp; max-width: 900px;
-
-&nbsp; margin: 50px auto;
-
-&nbsp; padding: 0 20px;
-
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+nav li { margin-left: 20px; }
 
+.nav-link.active { text-decoration: underline; }
 
-h2 {
-
-&nbsp; color: #4a90e2;
-
-&nbsp; border-bottom: 2px solid #4a90e2;
-
-&nbsp; display: inline-block;
-
-&nbsp; margin-bottom: 15px;
-
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-
-
-.project {
-
-&nbsp; background: yellow;
-
-&nbsp; padding: 20px;
-
-&nbsp; margin-top: 15px;
-
-&nbsp; border-radius: 10px;
-
-&nbsp; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
+/* Sections */
+.section {
+  padding: 100px 20px 60px;
+  margin-top: 60px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+h2 { color: #4a90e2; margin-bottom: 20px; border-bottom: 2px solid #4a90e2; display: inline-block; }
 
+.skills-list { list-style: none; padding: 0; }
+.skills-list li { display: inline-block; margin: 5px 10px; padding: 5px 10px; background: #e1f0ff; border-radius: 5px; }
 
-.project h3 {
+.job, .project { margin-bottom: 20px; }
+.job span { display: block; font-size: 0.9rem; color: #555; margin-bottom: 5px; }
 
-&nbsp; margin-top: 0;
-
+/* Contact Form */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-
-
-.project a {
-
-&nbsp; display: inline-block;
-
-&nbsp; margin-top: 10px;
-
-&nbsp; color: #357ABD;
-
-&nbsp; text-decoration: none;
-
-&nbsp; font-weight: 500;
-
+form button {
+  padding: 10px 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+form button:hover { background: #357ABD; }
 
-
-.project a:hover {
-
-&nbsp; text-decoration: underline;
-
-}
-
-
-
-/\* Contact Section \*/
-
-\#contact a {
-
-&nbsp; color: #357ABD;
-
-&nbsp; text-decoration: none;
-
-}
-
-
-
-\#contact a:hover {
-
-&nbsp; text-decoration: underline;
-
-}
-
-
-
-/\* Footer \*/
-
+/* Footer */
 footer {
-background: #2f3640;
-color: pink;
-text-align: center;
-padding: 20px;
-margin-top: 40px;
+  background: #2f3640;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul { display: none; flex-direction: column; }
+  .hamburger { display: block; }
+  nav.active ul { display: flex; background: #4a90e2; position: absolute; top: 60px; right: 0; width: 200px; flex-direction: column; padding: 10px; }
+  nav.active ul li { margin: 10px 0; }
+}
