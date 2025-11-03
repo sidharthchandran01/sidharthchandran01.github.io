@@ -137,18 +137,13 @@ h2 {
 /\* Footer \*/
 
 footer {
-
-&nbsp; background: #2f3640;
-
-&nbsp; color: pink;
-
-&nbsp; text-align: center;
-
-&nbsp; padding: 20px;
-
-&nbsp; margin-top: 40px;
-
+background: #2f3640;
+color: pink;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
 }
+
 
 
 
