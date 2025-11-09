@@ -99,7 +99,7 @@
     </div>
     <div class="hero-right">
       <div class="avatar" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Sidharth profile photo">
+        <img src="./photo.jpg" alt="Sidharth profile photo">
       </div>
     </div>
   </section>
@@ -251,7 +251,7 @@ const observer = new IntersectionObserver((entries) => { entries.forEach(entry =
 document.querySelectorAll('.card').forEach((el, i) => { el.style.transitionDelay = (i*60)+'ms'; observer.observe(el); });
 
 const typedEl = document.getElementById('typed');
-const strings = ['Sidharth Chandran','Data Analyst','Business Intelligence'];
+const strings = ['Sidharth Chandran','Data Analyst','Business Intelligence Analyst'];
 let si = 0, ci = 0;
 function typeTick(){ const cur = strings[si]; typedEl.textContent = cur.slice(0, ci); ci++; if(ci > cur.length+8){ ci = 0; si = (si+1) % strings.length; setTimeout(typeTick, 300); } else { setTimeout(typeTick, ci>cur.length?400:60); } }
 typeTick();
